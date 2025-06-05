@@ -36,6 +36,7 @@ body {
   background-color: #FDF5E6;
   padding-bottom: 0.5%;
   overflow: hidden;
+  
 }
 
 .calculator {
@@ -52,23 +53,51 @@ body {
               0px 6px 0px #808080,
               0px 7px 0px #808080;
   color: #FDF5E6;
+  width: 360px;
 }
 
 #display {
-  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 90.5%;
   margin-left: 2%;
   height: 80px;
   padding: 10px;
   text-align: right;
   vertical-align: middle;
-  line-height: 80px;
-  font-size: 3em;
+  line-height: 110px;
+  font-size: 2.2em;
   border: none;
-  background-color: #FDF5E6;
+  background-color: #F4f4f4;
   border-radius: 15px;
-  font-family: helvetica;
-  font-weight: bold;
+  font-family: 'Nova Square', helvetica;
+  font-weight: 500;
   color: black;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+#secondNumVal {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  width: 320px;
+  bottom: 75px;
+  line-height: 0px;
+  font-family: 'Nova Square', helvetica;
+  font-weight: 500;
+  color: black;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 1.55em;
+  text-overflow: clip;
+  white-space: nowrap;
 }
  .calculatorKeys {
   display: grid;
@@ -77,7 +106,7 @@ body {
   padding: 20px 5px 5px 5px;
 }
 
-#ac {
+#clear {
   background-color: #bd0000;
    box-shadow: 0px 1px 0px #820101,
                0px 2px 0px #820101,
@@ -86,6 +115,7 @@ body {
                0px 5px 0px #820101,
                0px 6px 0px #820101;
   color: #FDF5E6;
+  font-weight: bold;
 }
 
 button {
@@ -94,7 +124,6 @@ button {
 	border-radius: 8px;
   border: none;
   background-color: #FDF5E6;
-  font-weight: bold;
   font-size: 3em;
   color: black;
   box-shadow: 0px 1px 0px #808080,
@@ -110,7 +139,7 @@ button:hover, .equal:hover {
   transform: scale(1.02);
 }
 
-#equal {
+#equals {
   width: 430%;
   box-shadow: 0px 1px 0px #8a6500,
               0px 2px 0px #8a6500,
@@ -120,4 +149,9 @@ button:hover, .equal:hover {
               0px 6px 0px #8a6500;
   background-color: #c49003;
   color: #FDF5E6;
+}
+
+.number {
+  font-family: 'Nova Square';
+  font-weight: 550;
 }
