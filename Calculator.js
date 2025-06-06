@@ -75,7 +75,7 @@ const getResult = () => {
     document.getElementById("display").innerText = formattedResult;
     document.getElementById("secondNumVal").innerText = "";
     console.log(result, result.length);
-    firstNumArr.push(result);
+    firstNumArr.push(formattedResult);
     secondNum = "";
     operator = "";
     step = 2;
