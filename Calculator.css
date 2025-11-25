@@ -106,6 +106,10 @@ body {
   padding: 20px 5px 5px 5px;
 }
 
+.calculatorKeys > button:active {
+  transform: translate(2px, 2px);
+}
+
 #clear {
   background-color: #bd0000;
    box-shadow: 0px 1px 0px #820101,
